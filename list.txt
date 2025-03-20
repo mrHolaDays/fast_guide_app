@@ -1,2 +1,2 @@
-py.json
-py_lib.json
+Основные функции Python$ОПИСАНИЕ$py.json
+Основные библеотеки Python$ОПИСАНИЕ$py_lib.json
