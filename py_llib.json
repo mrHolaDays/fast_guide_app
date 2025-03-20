@@ -1,0 +1,1652 @@
+{
+  "NumPy": {
+    "Installation": "pip install numpy",
+    "Documentation": "https://numpy.org/doc/stable/",
+    "Array Creation": {
+      "array()": "Создает массив NumPy из списка или кортежа.",
+      "zeros()": "Создает массив заполненный нулями.",
+      "ones()": "Создает массив заполненный единицами.",
+      "empty()": "Создает массив без инициализации элементов.",
+      "arange()": "Создает массив с равномерно распределенными значениями в заданном диапазоне.",
+      "linspace()": "Создает массив с заданным количеством равномерно распределенных значений в заданном диапазоне.",
+      "eye()": "Создает единичную матрицу."
+    },
+    "Array Attributes": {
+      "ndim": "Количество измерений (осей) массива.",
+      "shape": "Размерность массива (кортеж, содержащий длину каждого измерения).",
+      "size": "Общее количество элементов в массиве.",
+      "dtype": "Тип данных элементов массива."
+    },
+    "Array Indexing and Slicing": {
+      "Indexing": "Доступ к элементам массива по индексу.",
+      "Slicing": "Извлечение подмассивов с использованием срезов.",
+      "Boolean Indexing": "Индексация с использованием булевых массивов."
+    },
+    "Array Operations": {
+      "reshape()": "Изменяет форму массива.",
+      "transpose()": "Транспонирует массив.",
+      "concatenate()": "Объединяет массивы вдоль существующей оси.",
+      "stack()": "Объединяет массивы вдоль новой оси.",
+      "split()": "Разделяет массив на несколько подмассивов.",
+      "sum()": "Суммирует элементы массива.",
+      "mean()": "Вычисляет среднее значение элементов массива.",
+      "std()": "Вычисляет стандартное отклонение элементов массива.",
+      "max()": "Находит максимальный элемент массива.",
+      "min()": "Находит минимальный элемент массива.",
+      "dot()": "Вычисляет скалярное произведение двух массивов.",
+      "* (element-wise multiplication)": "Выполняет поэлементное умножение массивов."
+    },
+     "Random Number Generation":{
+       "rand()": "Создает массив случайных чисел с равномерным распределением от 0 до 1",
+       "randn()": "Создает массив случайных чисел из стандартного нормального распределения",
+       "randint()": "Создает массив случайных целых чисел в заданном диапазоне",
+       "random.seed()": "Устанавливает начальное значение для генератора случайных чисел."
+     },
+    "Linear Algebra": {
+      "linalg.inv()": "Вычисляет обратную матрицу.",
+      "linalg.solve()": "Решает систему линейных уравнений.",
+      "linalg.eig()": "Вычисляет собственные значения и собственные векторы матрицы."
+    }
+  },
+  "Pandas": {
+    "Installation": "pip install pandas",
+    "Documentation": "https://pandas.pydata.org/docs/",
+    "Data Structures": {
+      "Series": "Одномерный массив с метками (индексами).",
+      "DataFrame": "Двумерная таблица с метками строк и столбцов."
+    },
+    "Data Input/Output": {
+      "read_csv()": "Читает данные из CSV файла в DataFrame.",
+      "read_excel()": "Читает данные из Excel файла в DataFrame.",
+      "to_csv()": "Записывает DataFrame в CSV файл.",
+      "to_excel()": "Записывает DataFrame в Excel файл."
+    },
+    "DataFrame Operations": {
+      "head()": "Возвращает первые несколько строк DataFrame.",
+      "tail()": "Возвращает последние несколько строк DataFrame.",
+      "info()": "Выводит сводную информацию о DataFrame (типы данных, количество не-пустых значений).",
+      "describe()": "Выводит описательную статистику DataFrame (среднее, стандартное отклонение, минимум, максимум и т.д.).",
+      "shape": "Размерность DataFrame (количество строк и столбцов).",
+      "columns": "Список имен столбцов DataFrame.",
+      "index": "Индекс DataFrame.",
+      "set_index()": "Устанавливает один или несколько столбцов в качестве индекса.",
+      "reset_index()": "Сбрасывает индекс DataFrame.",
+      "drop()": "Удаляет строки или столбцы из DataFrame.",
+      "rename()": "Переименовывает столбцы или индексы.",
+      "fillna()": "Заполняет пропущенные значения.",
+      "dropna()": "Удаляет строки с пропущенными значениями.",
+      "groupby()": "Группирует данные по одному или нескольким столбцам.",
+      "sort_values()": "Сортирует DataFrame по значениям одного или нескольких столбцов.",
+      "apply()": "Применяет функцию к строкам или столбцам DataFrame.",
+      "merge()": "Объединяет два DataFrame по общему столбцу или индексу.",
+      "concat()": "Объединяет несколько DataFrame по строкам или столбцам."
+    },
+    "Series Operations": {
+      "value_counts()": "Подсчитывает количество уникальных значений в Series.",
+      "unique()": "Возвращает уникальные значения в Series.",
+      "isin()": "Проверяет, содержатся ли значения Series в заданном списке или Series."
+    },
+    "Data Selection": {
+      "loc[]": "Выбор строк и столбцов по меткам.",
+      "iloc[]": "Выбор строк и столбцов по целочисленным индексам.",
+      "Boolean Indexing": "Выбор строк на основе булевых условий."
+    }
+  },
+  "Matplotlib": {
+    "Installation": "pip install matplotlib",
+    "Documentation": "https://matplotlib.org/stable/contents.html",
+    "Basic Plotting": {
+      "pyplot.plot()": "Создает линейный график.",
+      "pyplot.scatter()": "Создает точечный график.",
+      "pyplot.bar()": "Создает столбчатую диаграмму.",
+      "pyplot.hist()": "Создает гистограмму.",
+      "pyplot.imshow()": "Отображает изображение."
+    },
+    "Plot Customization": {
+      "pyplot.title()": "Устанавливает заголовок графика.",
+      "pyplot.xlabel()": "Устанавливает метку оси X.",
+      "pyplot.ylabel()": "Устанавливает метку оси Y.",
+      "pyplot.xlim()": "Устанавливает пределы оси X.",
+      "pyplot.ylim()": "Устанавливает пределы оси Y.",
+      "pyplot.legend()": "Отображает легенду.",
+      "pyplot.grid()": "Отображает сетку."
+    },
+    "Figure and Axes": {
+      "pyplot.figure()": "Создает новую фигуру.",
+      "pyplot.axes()": "Создает новые оси.",
+      "Figure.add_subplot()": "Добавляет подграфик на фигуру.",
+      "Axes.set_title()": "Устанавливает заголовок подграфика.",
+      "Axes.set_xlabel()": "Устанавливает метку оси X подграфика.",
+      "Axes.set_ylabel()": "Устанавливает метку оси Y подграфика."
+    },
+    "Saving Plots": {
+      "pyplot.savefig()": "Сохраняет график в файл."
+    },
+      "Plot types": {
+          "plot()": "Создает линейный график",
+          "scatter()": "Создает точечный график",
+          "bar()": "Создает столбчатую диаграмму",
+          "pie()": "Создает круговую диаграмму",
+          "boxplot()": "Создает ящик с усами",
+          "hist()": "Создает гистограмму"
+      }
+  },
+  "Seaborn": {
+    "Installation": "pip install seaborn",
+    "Documentation": "https://seaborn.pydata.org/",
+    "Relational Plots": {
+      "scatterplot()": "Создает точечный график.",
+      "lineplot()": "Создает линейный график.",
+      "relplot()": "Общий интерфейс для relational plots."
+    },
+    "Distribution Plots": {
+      "histplot()": "Создает гистограмму.",
+      "kdeplot()": "Создает график Kernel Density Estimate (KDE).",
+      "displot()": "Общий интерфейс для distribution plots."
+    },
+    "Categorical Plots": {
+      "boxplot()": "Создает ящик с усами.",
+      "violinplot()": "Создает график Violin Plot.",
+      "barplot()": "Создает столбчатую диаграмму.",
+      "countplot()": "Создает диаграмму количества.",
+      "catplot()": "Общий интерфейс для categorical plots."
+    },
+    "Regression Plots": {
+      "regplot()": "Создает график регрессии.",
+      "lmplot()": "Создает график регрессии с учетом категориальных переменных."
+    },
+    "Matrix Plots": {
+      "heatmap()": "Создает тепловую карту.",
+      "clustermap()": "Создает кластеризованную тепловую карту."
+    },
+    "Plot Customization": {
+      "set_style()": "Устанавливает стиль графика.",
+      "set_palette()": "Устанавливает цветовую палитру."
+    }
+  },
+  "Scikit-learn": {
+    "Installation": "pip install scikit-learn",
+    "Documentation": "https://scikit-learn.org/stable/",
+    "Model Selection": {
+      "train_test_split()": "Разделяет данные на обучающую и тестовую выборки.",
+      "KFold()": "Создает объект K-Fold для кросс-валидации.",
+      "cross_val_score()": "Вычисляет оценку кросс-валидации.",
+      "GridSearchCV()": "Выполняет поиск по сетке параметров."
+    },
+    "Supervised Learning": {
+      "LinearRegression()": "Линейная регрессия.",
+      "LogisticRegression()": "Логистическая регрессия.",
+      "DecisionTreeClassifier()": "Дерево решений.",
+      "RandomForestClassifier()": "Случайный лес.",
+      "SVC()": "Метод опорных векторов.",
+      "fit()": "Обучает модель.",
+      "predict()": "Предсказывает значения.",
+      "score()": "Оценивает качество модели."
+    },
+    "Unsupervised Learning": {
+      "KMeans()": "Алгоритм K-средних.",
+      "PCA()": "Метод главных компонент.",
+      "fit_transform()": "Обучает модель и преобразует данные."
+    },
+    "Metrics": {
+      "accuracy_score()": "Вычисляет точность.",
+      "precision_score()": "Вычисляет точность.",
+      "recall_score()": "Вычисляет полноту.",
+      "f1_score()": "Вычисляет F1-меру.",
+      "confusion_matrix()": "Создает матрицу ошибок.",
+      "roc_auc_score()": "Вычисляет площадь под ROC-кривой."
+    },
+    "Preprocessing": {
+      "StandardScaler()": "Стандартизирует данные.",
+      "MinMaxScaler()": "Масштабирует данные в диапазон [0, 1].",
+      "LabelEncoder()": "Кодирует категориальные признаки числовыми значениями.",
+      "OneHotEncoder()": "Кодирует категориальные признаки с использованием one-hot encoding."
+    }
+  },
+  "TensorFlow": {
+    "Installation": "pip install tensorflow",
+    "Documentation": "https://www.tensorflow.org/api_docs",
+    "Core Concepts": {
+      "Tensor": "Основной объект данных в TensorFlow. Представляет собой многомерный массив.",
+      "Variable": "Тензор, значение которого может изменяться в процессе обучения.",
+      "Graph": "Вычислительный граф, описывающий последовательность операций."
+    },
+    "Layers API (tf.keras.layers)": {
+      "Dense()": "Полносвязный слой.",
+      "Conv2D()": "Сверточный 2D слой.",
+      "MaxPooling2D()": "Слой max pooling.",
+      "Flatten()": "Преобразует многомерный тензор в одномерный.",
+      "Embedding()": "Слой embedding для работы с текстовыми данными.",
+      "LSTM()": "Слой LSTM (Long Short-Term Memory) для работы с последовательностями.",
+      "BatchNormalization()": "Слой Batch Normalization."
+    },
+    "Model API (tf.keras.models)": {
+      "Sequential()": "Создает последовательную модель.",
+      "Model()": "Создает функциональную модель.",
+      "compile()": "Конфигурирует процесс обучения (оптимизатор, функция потерь, метрики).",
+      "fit()": "Обучает модель.",
+      "evaluate()": "Оценивает качество модели.",
+      "predict()": "Предсказывает значения.",
+      "save()": "Сохраняет модель.",
+      "load_model()": "Загружает модель."
+    },
+    "Optimizers (tf.keras.optimizers)": {
+      "Adam()": "Оптимизатор Adam.",
+      "SGD()": "Оптимизатор Stochastic Gradient Descent."
+    },
+    "Losses (tf.keras.losses)": {
+      "BinaryCrossentropy()": "Функция потерь Binary Crossentropy.",
+      "CategoricalCrossentropy()": "Функция потерь Categorical Crossentropy.",
+      "MeanSquaredError()": "Функция потерь Mean Squared Error."
+    },
+    "Metrics (tf.keras.metrics)": {
+      "Accuracy()": "Метрика Accuracy.",
+      "Precision()": "Метрика Precision.",
+      "Recall()": "Метрика Recall."
+    }
+  },
+  "Keras": {
+    "Installation": "pip install keras",
+    "Documentation": "https://keras.io/api/",
+        "Layers": {
+            "Dense": "Полносвязный слой",
+            "Conv2D": "Слой свертки для двумерных данных (изображений)",
+            "MaxPooling2D": "Слой максимальной подвыборки",
+            "LSTM": "Слой долгой краткосрочной памяти (для последовательностей)",
+            "Embedding": "Слой для встраивания слов или других категориальных данных в векторное пространство"
+        },
+        "Models": {
+            "Sequential": "Линейная последовательная модель",
+            "Model": "Более гибкая модель, позволяющая создавать сложные графы слоев"
+        },
+        "Activations": {
+            "relu": "Функция активации ReLU (Rectified Linear Unit)",
+            "sigmoid": "Сигмоидальная функция активации (выдает значения от 0 до 1)",
+            "softmax": "Функция активации Softmax (преобразует вектор в распределение вероятностей)"
+        },
+        "Optimizers": {
+            "Adam": "Алгоритм оптимизации Adam",
+            "SGD": "Алгоритм стохастического градиентного спуска"
+        },
+        "Losses": {
+            "categorical_crossentropy": "Категориальная перекрестная энтропия (для многоклассовой классификации)",
+            "binary_crossentropy": "Бинарная перекрестная энтропия (для бинарной классификации)",
+            "mse": "Среднеквадратичная ошибка (Mean Squared Error) для регрессии"
+        },
+        "Metrics": {
+            "accuracy": "Метрика точности (доля правильных ответов)",
+            "precision": "Метрика точности (доля правильно предсказанных положительных примеров)",
+            "recall": "Метрика полноты (доля найденных положительных примеров из всех положительных)"
+        },
+        "Callbacks": {
+            "ModelCheckpoint": "Сохраняет модель во время обучения",
+            "EarlyStopping": "Останавливает обучение, если качество модели перестает улучшаться"
+        }
+    },
+   "PyTorch": {
+        "Installation": "pip install torch torchvision torchaudio",
+        "Documentation": "https://pytorch.org/docs/stable/index.html",
+        "Tensors": {
+            "torch.Tensor": "Основной класс для тензоров (многомерных массивов)",
+            "torch.zeros": "Создает тензор, заполненный нулями",
+            "torch.ones": "Создает тензор, заполненный единицами",
+            "torch.randn": "Создает тензор со случайными числами из нормального распределения"
+        },
+        "Neural Network (nn)": {
+            "nn.Module": "Базовый класс для нейронных сетей",
+            "nn.Linear": "Полносвязный слой",
+            "nn.Conv2d": "Слой свертки для двумерных данных (изображений)",
+            "nn.MaxPool2d": "Слой максимальной подвыборки",
+            "nn.LSTM": "Слой долгой краткосрочной памяти (для последовательностей)",
+            "nn.Embedding": "Слой для встраивания слов или других категориальных данных в векторное пространство",
+            "nn.ReLU": "Функция активации ReLU (Rectified Linear Unit)",
+            "nn.Sigmoid": "Сигмоидальная функция активации (выдает значения от 0 до 1)",
+            "nn.Softmax": "Функция активации Softmax (преобразует вектор в распределение вероятностей)"
+        },
+        "Autograd (torch.autograd)": {
+            "torch.autograd.grad": "Вычисляет градиенты",
+            "torch.no_grad": "Контекстный менеджер для отключения вычисления градиентов"
+        },
+        "Optim (torch.optim)": {
+            "optim.Adam": "Алгоритм оптимизации Adam",
+            "optim.SGD": "Алгоритм стохастического градиентного спуска"
+        },
+        "Loss Functions": {
+            "nn.CrossEntropyLoss": "Функция потерь кросс-энтропии (для многоклассовой классификации)",
+            "nn.BCELoss": "Функция потерь бинарной перекрестной энтропии (для бинарной классификации)",
+            "nn.MSELoss": "Функция потерь среднеквадратичной ошибки (Mean Squared Error) для регрессии"
+        },
+        "Dataset and DataLoader (torch.utils.data)": {
+            "data.Dataset": "Базовый класс для наборов данных",
+            "data.DataLoader": "Класс для загрузки данных в модель по батчам"
+        }
+    },
+ "Requests": {
+        "Installation": "pip install requests",
+        "Documentation": "https://requests.readthedocs.io/en/latest/",
+        "Functions": {
+            "get()": "Отправляет GET-запрос по указанному URL",
+            "post()": "Отправляет POST-запрос по указанному URL",
+            "put()": "Отправляет PUT-запрос по указанному URL",
+            "delete()": "Отправляет DELETE-запрос по указанному URL",
+            "head()": "Отправляет HEAD-запрос по указанному URL",
+            "options()": "Отправляет OPTIONS-запрос по указанному URL"
+        },
+        "Classes": {
+            "Response": "Класс, представляющий ответ на HTTP-запрос",
+            "Session": "Класс для хранения параметров запроса (например, cookies) между несколькими запросами"
+        },
+        "Response attributes": {
+            "status_code": "Код состояния HTTP (например, 200, 404)",
+            "text": "Текст ответа (содержимое страницы)",
+            "content": "Содержимое ответа в виде байтов",
+            "json()": "Преобразует JSON-ответ в словарь Python",
+            "headers": "Словарь с заголовками ответа",
+            "cookies": "Cookies, установленные сервером"
+        },
+        "Exceptions": {
+            "RequestException": "Базовый класс для всех исключений, связанных с requests",
+            "HTTPError": "Исключение, возникающее при ошибке HTTP (код состояния >= 400)",
+            "ConnectionError": "Исключение, возникающее при ошибке соединения"
+        }
+    },
+    "Beautiful Soup": {
+        "Installation": "pip install beautifulsoup4",
+        "Documentation": "https://www.crummy.com/software/BeautifulSoup/bs4/doc/",
+        "Classes": {
+            "BeautifulSoup": "Класс для парсинга HTML и XML",
+            "Tag": "Класс, представляющий HTML/XML-тег",
+            "NavigableString": "Класс, представляющий текст внутри тега"
+        },
+        "Methods": {
+            "find()": "Находит первый тег, соответствующий критериям поиска",
+            "find_all()": "Находит все теги, соответствующие критериям поиска",
+            "get_text()": "Извлекает текст из тега и его потомков",
+            "attrs": "Словарь с атрибутами тега",
+            "name": "Имя тега",
+            "parent": "Родительский тег",
+            "next_sibling": "Следующий соседний тег",
+            "previous_sibling": "Предыдущий соседний тег"
+        },
+        "Searching the tree": {
+            "find_all(string='...')": "Находит теги, содержащие указанный текст",
+            "find_all(class_='...')": "Находит теги с указанным классом CSS",
+            "find_all(id='...')": "Находит тег с указанным ID"
+        }
+    },
+    "Scrapy": {
+        "Installation": "pip install scrapy",
+        "Documentation": "https://docs.scrapy.org/en/latest/",
+        "Concepts": {
+            "Spider": "Класс, определяющий, как обходить сайт и извлекать данные",
+            "Item": "Класс для хранения извлеченных данных",
+            "Selector": "Класс для выбора элементов HTML/XML с помощью XPath или CSS",
+            "Middleware": "Компоненты, изменяющие запросы и ответы",
+            "Pipeline": "Компоненты, обрабатывающие извлеченные данные"
+        },
+        "Spider attributes": {
+            "name": "Имя паука (уникальное)",
+            "start_urls": "Список URL-адресов, с которых начинается обход",
+            "parse()": "Метод, обрабатывающий ответ сервера и извлекающий данные"
+        },
+        "Selectors": {
+            "xpath()": "Выбирает элементы с помощью XPath-выражения",
+            "css()": "Выбирает элементы с помощью CSS-селектора",
+            "get()": "Извлекает текст из выбранного элемента",
+            "getall()": "Извлекает текст из всех выбранных элементов"
+        },
+        "Settings": {
+            "BOT_NAME": "Имя вашего проекта",
+            "ROBOTSTXT_OBEY": "Соблюдать правила из robots.txt",
+            "DEFAULT_REQUEST_HEADERS": "Заголовки HTTP-запросов по умолчанию",
+            "ITEM_PIPELINES": "Список конвейеров обработки элементов"
+        }
+    },
+    "Flask": {
+        "Installation": "pip install flask",
+        "Documentation": "https://flask.palletsprojects.com/en/2.3.x/",
+        "Core": {
+            "Flask()": "Создает экземпляр Flask-приложения",
+            "route()": "Декоратор для определения маршрутов",
+            "run()": "Запускает веб-сервер",
+            "request": "Объект запроса (содержит данные от клиента)",
+            "render_template()": "Отображает HTML-шаблон"
+        },
+        "Request object": {
+            "args": "Аргументы GET-запроса",
+            "form": "Данные POST-запроса",
+            "files": "Загруженные файлы",
+            "cookies": "Cookies",
+            "headers": "Заголовки запроса"
+        },
+        "Response": {
+            "make_response()": "Создает объект ответа",
+            "redirect()": "Выполняет перенаправление на другой URL",
+            "jsonify()": "Создает JSON-ответ"
+        },
+        "Templates": {
+            "render_template()": "Отображает HTML-шаблон, передавая переменные",
+            "{% ... %}": "Управляющие конструкции Jinja2 (например, циклы, условия)",
+            "{{ ... }}": "Вывод переменных в шаблоне"
+        }
+    },
+    "Django": {
+        "Installation": "pip install django",
+        "Documentation": "https://docs.djangoproject.com/en/4.2/",
+        "Core": {
+            "manage.py": "Утилита командной строки для управления проектом",
+            "settings.py": "Файл настроек проекта",
+            "urls.py": "Файл маршрутизации URL-адресов",
+            "views.py": "Файлы с функциями-представлениями"
+        },
+        "Models": {
+            "models.Model": "Базовый класс для моделей данных",
+            "CharField": "Текстовое поле",
+            "IntegerField": "Целочисленное поле",
+            "ForeignKey": "Связь с другой моделью",
+            "objects": "Менеджер объектов для выполнения запросов к базе данных",
+            "save()": "Сохраняет изменения в базе данных",
+            "delete()": "Удаляет объект из базы данных"
+        },
+        "Views": {
+            "HttpRequest": "Объект запроса",
+            "HttpResponse": "Объект ответа",
+            "render()": "Отображает шаблон",
+            "redirect()": "Перенаправляет на другой URL"
+        },
+        "Templates": {
+            "{{ ... }}": "Вывод переменных в шаблоне",
+            "{% ... %}": "Теги шаблона (например, циклы, условия)",
+            "{% extends '...' %}": "Наследование шаблонов",
+            "{% block ... %} ... {% endblock %}": "Определение блоков для переопределения в дочерних шаблонах"
+        },
+        "Forms": {
+            "forms.Form": "Базовый класс для форм",
+            "CharField": "Текстовое поле",
+            "IntegerField": "Целочисленное поле",
+            "BooleanField": "Поле-флажок",
+            "is_valid()": "Проверяет, валидна ли форма",
+            "cleaned_data": "Словарь с очищенными данными формы"
+        },
+        "Admin": {
+            "admin.site.register()": "Регистрирует модель для управления в административной панели Django"
+        }
+    },
+  "SQLAlchemy": {
+        "Installation": "pip install sqlalchemy",
+        "Documentation": "https://www.sqlalchemy.org/",
+        "Core Concepts": {
+            "Engine": "Интерфейс к базе данных",
+            "Connection": "Представляет соединение с базой данных",
+            "MetaData": "Хранит информацию о схеме базы данных (таблицы, столбцы и т.д.)",
+            "Table": "Представляет таблицу в базе данных",
+            "Column": "Представляет столбец в таблице",
+            "Integer, String, DateTime, Boolean": "Типы данных для столбцов",
+            "PrimaryKeyConstraint, ForeignKeyConstraint": "Ограничения целостности"
+        },
+        "ORM (Object-Relational Mapper)": {
+            "declarative_base()": "Создает базовый класс для декларативного описания моделей",
+            "sessionmaker()": "Создает класс для управления сессиями базы данных",
+            "Session": "Класс для взаимодействия с базой данных (добавление, удаление, обновление объектов)",
+            "relationship()": "Определяет связь между моделями (один-к-одному, один-ко-многим, многие-ко-многим)",
+            "query": "Объект запроса для извлечения данных из базы данных",
+            "add()": "Добавляет объект в сессию",
+            "commit()": "Сохраняет изменения в базе данных",
+            "rollback()": "Отменяет изменения в базе данных",
+            "delete()": "Удаляет объект из базы данных"
+        },
+        "SQL Expression Language": {
+            "select()": "Создает запрос SELECT",
+            "insert()": "Создает запрос INSERT",
+            "update()": "Создает запрос UPDATE",
+            "delete()": "Создает запрос DELETE",
+            "func": "Предоставляет доступ к SQL-функциям (например, func.count(), func.max())",
+            "and_(), or_(), not_()": "Логические операторы для условий запроса"
+        }
+    },
+  "Pytest": {
+        "Installation": "pip install pytest",
+        "Documentation": "https://docs.pytest.org/en/stable/",
+        "Core Concepts": {
+            "Test functions": "Функции, начинающиеся с префикса 'test_'",
+            "Fixtures": "Функции, предоставляющие данные или ресурсы для тестов",
+            "Assertions": "Проверки (например, assert a == b)",
+            "Markers": "Метки для категоризации и управления тестами"
+        },
+        "Fixtures": {
+            "@pytest.fixture": "Декоратор для определения фикстур",
+            "request": "Объект request, предоставляющий информацию о тесте, запрашивающем фикстуру",
+            "scope": "Определяет область действия фикстуры ('function', 'class', 'module', 'session')"
+        },
+        "Markers": {
+            "@pytest.mark.parametrize": "Декоратор для параметризации тестов",
+            "@pytest.mark.skip": "Декоратор для пропуска теста",
+            "@pytest.mark.xfail": "Декоратор для ожидания сбоя теста",
+            "@pytest.mark.usefixtures": "Декоратор для использования фикстур в тесте"
+        },
+        "Running tests": {
+            "pytest": "Запускает тесты в текущем каталоге",
+            "pytest -v": "Запускает тесты с подробным выводом",
+            "pytest -k 'expression'": "Запускает тесты, имена которых соответствуют выражению",
+            "pytest --pdb": "Запускает отладчик при сбое теста"
+        },
+        "Assertions": {
+            "assert a == b": "Проверяет равенство a и b",
+            "assert a != b": "Проверяет неравенство a и b",
+            "assert a > b": "Проверяет, что a больше b",
+            "assert a in b": "Проверяет, что a содержится в b",
+            "pytest.raises()": "Контекстный менеджер для проверки, что код вызывает исключение"
+        }
+    },
+  "unittest": {
+        "Installation": "Входит в стандартную библиотеку Python (не требует установки)",
+        "Documentation": "https://docs.python.org/3/library/unittest.html",
+        "Core Concepts": {
+            "TestCase": "Базовый класс для создания тестовых классов",
+            "Test methods": "Методы тестового класса, начинающиеся с префикса 'test_'",
+            "Assertions": "Проверки (например, self.assertEqual(a, b))",
+            "Test suite": "Набор тестов",
+            "Test runner": "Компонент, запускающий тесты и выводящий результаты"
+        },
+        "TestCase methods": {
+            "setUp()": "Метод, выполняющийся перед каждым тестом",
+            "tearDown()": "Метод, выполняющийся после каждого теста",
+            "setUpClass()": "Метод класса, выполняющийся один раз перед всеми тестами в классе",
+            "tearDownClass()": "Метод класса, выполняющийся один раз после всех тестов в классе"
+        },
+        "Assertions": {
+            "assertEqual(a, b)": "Проверяет равенство a и b",
+            "assertNotEqual(a, b)": "Проверяет неравенство a и b",
+            "assertTrue(x)": "Проверяет, что x истинно",
+            "assertFalse(x)": "Проверяет, что x ложно",
+            "assertRaises(exception, callable, *args, **kwargs)": "Проверяет, что вызов callable вызывает исключение exception",
+            "assertIn(a, b)": "Проверяет, что a содержится в b",
+            "assertIsInstance(a, b)": "Проверяет, что a является экземпляром класса b"
+        },
+        "Running tests": {
+            "unittest.main()": "Запускает тесты"
+        }
+    },
+    "Asyncio": {
+      "Installation": "Входит в стандартную библиотеку Python (не требует установки)",
+      "Documentation": "https://docs.python.org/3/library/asyncio.html",
+      "Core Concepts": {
+          "Event loop": "Цикл событий, управляющий выполнением асинхронного кода",
+          "Coroutine": "Функция, которая может приостанавливать и возобновлять свое выполнение",
+          "Task": "Объект, представляющий запланированное выполнение корутины",
+          "Future": "Объект, представляющий результат асинхронной операции"
+      },
+      "Functions": {
+          "asyncio.run(coroutine)": "Запускает корутину и управляет event loop",
+          "asyncio.create_task(coroutine)": "Создает задачу для выполнения корутины",
+          "asyncio.sleep(seconds)": "Приостанавливает выполнение корутины на заданное количество секунд",
+          "asyncio.gather(*coroutines)": "Запускает несколько корутин параллельно и ожидает их завершения"
+      },
+      "Objects": {
+          "asyncio.Future": "Представляет результат асинхронной операции",
+          "asyncio.Task": "Представляет запланированное выполнение корутины",
+          "asyncio.Lock": "Примитив синхронизации для предотвращения гонок данных"
+      },
+      "Streams": {
+          "asyncio.open_connection()": "Устанавливает асинхронное TCP соединение",
+          "asyncio.StreamReader": "Для чтения данных из потока",
+          "asyncio.StreamWriter": "Для записи данных в поток"
+      },
+      "Context Managers": {
+          "asyncio.Lock": "Для синхронизации доступа к ресурсам"
+      }
+  },
+ "Celery": {
+      "Installation": "pip install celery",
+      "Documentation": "https://docs.celeryproject.org/en/stable/",
+      "Core Concepts": {
+          "Task": "Функция, которая выполняется асинхронно",
+          "Broker": "Посредник сообщений (например, RabbitMQ, Redis)",
+          "Worker": "Процесс, который выполняет задачи",
+          "Result Backend": "Хранилище результатов (например, Redis, базы данных)"
+      },
+      "Configuration": {
+          "app = Celery(...)": "Создает экземпляр Celery приложения",
+          "app.conf.broker_url": "URL брокера",
+          "app.conf.result_backend": "URL хранилища результатов"
+      },
+      "Tasks": {
+          "@app.task": "Декоратор для определения задачи",
+          "task.delay(*args, **kwargs)": "Отправляет задачу для выполнения",
+          "task.apply_async(args, kwargs)": "Отправляет задачу с расширенными параметрами (например, отложенное выполнение)",
+          "task.AsyncResult(task_id)": "Получает результаты задачи"
+      },
+      "Result": {
+          "result.get()": "Получает результат задачи (блокирует до завершения)",
+          "result.ready()": "Проверяет, завершена ли задача",
+          "result.state": "Состояние задачи ('PENDING', 'STARTED', 'SUCCESS', 'FAILURE' и т.д.)"
+      },
+      "Running Celery": {
+          "celery -A your_project worker -l info": "Запуск worker-а"
+      }
+  },
+"Pillow": {
+      "Installation": "pip install Pillow",
+      "Documentation": "https://pillow.readthedocs.io/en/stable/",
+      "Core": {
+          "Image": "Основной класс для работы с изображениями",
+          "Image.open()": "Открывает изображение",
+          "Image.save()": "Сохраняет изображение",
+          "Image.show()": "Отображает изображение",
+          "Image.new()": "Создает новое изображение"
+      },
+      "Image Methods": {
+          "resize()": "Изменяет размер изображения",
+          "crop()": "Обрезает изображение",
+          "rotate()": "Поворачивает изображение",
+          "convert()": "Преобразует изображение в другой режим (например, 'RGB', 'L')",
+          "getpixel()": "Получает значение пикселя",
+          "putpixel()": "Устанавливает значение пикселя",
+          "filter()": "Применяет фильтр к изображению"
+      },
+      "Image Attributes": {
+          "size": "Размер изображения (ширина, высота)",
+          "format": "Формат изображения (например, 'JPEG', 'PNG')",
+          "mode": "Режим изображения (например, 'RGB', 'L')"
+      },
+      "Drawing": {
+          "ImageDraw.Draw()": "Создает объект рисования",
+          "draw.line()": "Рисует линию",
+          "draw.rectangle()": "Рисует прямоугольник",
+          "draw.text()": "Рисует текст"
+      }
+  },
+"OpenCV": {
+      "Installation": "pip install opencv-python",
+      "Documentation": "https://docs.opencv.org/4.x/",
+      "Core": {
+          "imread()": "Считывает изображение с диска",
+          "imshow()": "Отображает изображение в окне",
+          "imwrite()": "Записывает изображение на диск",
+          "VideoCapture()": "Для работы с видеопотоками",
+          "VideoWriter()": "Для записи видео"
+      },
+      "Image Processing": {
+          "cvtColor()": "Преобразование цветовых пространств (например, BGR to GRAY)",
+          "resize()": "Изменение размера изображения",
+          "blur()": "Размытие изображения",
+          "threshold()": "Бинаризация изображения",
+          "findContours()": "Поиск контуров на изображении",
+          "drawContours()": "Отрисовка контуров"
+      },
+      "Video Processing": {
+          "read()": "Считывает кадр из видеопотока",
+          "release()": "Освобождает ресурсы видеопотока"
+      },
+      "Drawing Functions": {
+          "line()": "Рисует линию",
+          "rectangle()": "Рисует прямоугольник",
+          "circle()": "Рисует окружность",
+          "putText()": "Рисует текст"
+      },
+     "Key functions": {
+        "cv2.waitKey()": "Ожидает нажатие клавиши",
+        "cv2.destroyAllWindows()": "Закрывает все окна"
+     }
+  },
+"Pygame": {
+      "Installation": "pip install pygame",
+      "Documentation": "https://www.pygame.org/docs/",
+      "Core": {
+          "init()": "Инициализация Pygame",
+          "quit()": "Выход из Pygame",
+          "display.set_mode()": "Создание окна",
+          "event.get()": "Получение событий (нажатия клавиш, мыши и т.д.)",
+          "time.Clock()": "Для управления частотой кадров",
+          "display.update()": "Обновление экрана"
+      },
+      "Surface": {
+          "Surface()": "Создает поверхность (для рисования)",
+          "fill()": "Заполняет поверхность цветом",
+          "blit()": "Рисует другую поверхность на этой поверхности",
+          "get_rect()": "Получает прямоугольник поверхности"
+      },
+      "Colors": {
+          "Color(r, g, b)": "Создание цвета (RGB)",
+          "Color(r, g, b, a)": "Создание цвета с альфа-каналом"
+      },
+      "Events": {
+          "QUIT": "Событие закрытия окна",
+          "KEYDOWN": "Событие нажатия клавиши",
+          "KEYUP": "Событие отпускания клавиши",
+          "MOUSEBUTTONDOWN": "Событие нажатия кнопки мыши",
+          "MOUSEBUTTONUP": "Событие отпускания кнопки мыши",
+          "MOUSEMOTION": "Событие перемещения мыши"
+      },
+      "Drawing": {
+          "draw.rect()": "Рисует прямоугольник",
+          "draw.circle()": "Рисует окружность",
+          "draw.line()": "Рисует линию",
+          "draw.polygon()": "Рисует многоугольник",
+          "draw.arc()": "Рисует дугу"
+      },
+      "Sound": {
+          "mixer.Sound()": "Загрузка звука",
+          "sound.play()": "Воспроизведение звука"
+      }
+  },
+"Tkinter": {
+      "Installation": "Входит в стандартную библиотеку Python (не требует установки)",
+      "Documentation": "https://docs.python.org/3/library/tkinter.html",
+      "Core": {
+          "Tk()": "Создает главное окно",
+          "mainloop()": "Запускает цикл обработки событий"
+      },
+      "Widgets": {
+          "Label()": "Текстовая метка",
+          "Button()": "Кнопка",
+          "Entry()": "Текстовое поле ввода",
+          "Text()": "Многострочное текстовое поле",
+          "Canvas()": "Холст для рисования",
+          "Frame()": "Контейнер для виджетов",
+          "Checkbutton()": "Флажок",
+          "Radiobutton()": "Переключатель",
+          "Listbox()": "Список",
+          "Scrollbar()": "Полоса прокрутки",
+          "Menu()": "Меню",
+          "messagebox": "Диалоговые окна (showinfo, showerror, askyesno)"
+      },
+      "Layout Management": {
+          "pack()": "Размещение виджетов (простой, но менее гибкий)",
+          "grid()": "Размещение виджетов в сетке (более гибкий)",
+          "place()": "Размещение виджетов по абсолютным координатам"
+      },
+      "Events": {
+          "bind()": "Привязывает функцию к событию (нажатие кнопки, ввод текста и т.д.)"
+      },
+       "Widget Attributes": {
+          "text": "Текст виджета",
+          "command": "Функция, вызываемая при нажатии кнопки",
+          "textvariable": "Переменная, связанная с текстовым полем",
+          "width": "Ширина виджета",
+          "height": "Высота виджета",
+          "bg": "Цвет фона",
+          "fg": "Цвет текста"
+      }
+  },
+"PyQT": {
+      "Installation": "pip install PyQt5 (или PyQt6)",
+      "Documentation": "https://www.riverbankcomputing.com/static/Docs/PyQt5/",
+      "Core": {
+          "QApplication": "Приложение",
+          "QWidget": "Базовый класс виджета",
+          "QMainWindow": "Главное окно",
+          "QVBoxLayout": "Вертикальный компоновщик",
+          "QHBoxLayout": "Горизонтальный компоновщик"
+      },
+      "Widgets": {
+          "QLabel": "Текстовая метка",
+          "QPushButton": "Кнопка",
+          "QLineEdit": "Текстовое поле ввода",
+          "QTextEdit": "Многострочное текстовое поле",
+          "QListView": "Список",
+          "QComboBox": "Выпадающий список",
+          "QTableWidget": "Таблица"
+      },
+      "Layouts": {
+          "QVBoxLayout": "Вертикальный компоновщик",
+          "QHBoxLayout": "Горизонтальный компоновщик",
+          "QGridLayout": "Сетка",
+          "QFormLayout": "Форма"
+      },
+      "Signals and Slots": {
+          "signal.connect(slot)": "Соединяет сигнал с слотом (функцией)",
+          "QPushButton.clicked.connect()": "Сигнал нажатия кнопки"
+      },
+      "Events": {
+          "event.accept()": "Принимает событие",
+          "event.ignore()": "Игнорирует событие"
+      }
+  },
+"Pyglet": {
+      "Installation": "pip install pyglet",
+      "Documentation": "https://pyglet.org/index.html",
+      "Core": {
+          "window": "Создание окна",
+          "event": "Обработка событий",
+          "clock": "Управление временем"
+      },
+      "Window": {
+          "window.Window()": "Создает окно",
+          "window.set_size()": "Устанавливает размер окна",
+          "window.set_caption()": "Устанавливает заголовок окна",
+          "window.clear()": "Очищает окно"
+      },
+      "Events": {
+          "window.on_draw()": "Обработчик события отрисовки",
+          "window.on_key_press()": "Обработчик нажатия клавиши",
+          "window.on_mouse_press()": "Обработчик нажатия кнопки мыши"
+      },
+      "Graphics": {
+          "graphics.draw.color()": "Устанавливает цвет",
+          "graphics.draw.rect()": "Рисует прямоугольник",
+          "graphics.draw.circle()": "Рисует круг",
+          "text.Label()": "Создает текстовую метку",
+          "image.load()": "Загружает изображение"
+      },
+      "Audio": {
+          "media.load()": "Загружает аудиофайл",
+          "player.Player()": "Создает проигрыватель"
+      }
+  },
+"ReportLab": {
+      "Installation": "pip install reportlab",
+      "Documentation": "https://www.reportlab.com/docs/reportlab-userguide.pdf",
+      "Core": {
+          "SimpleDocTemplate()": "Создает документ",
+          "Paragraph()": "Создает абзац текста",
+          "Table()": "Создает таблицу",
+          "Image()": "Вставляет изображение"
+      },
+      "Document Templates": {
+          "SimpleDocTemplate()": "Для простых документов",
+          "BaseDocTemplate()": "Более гибкий шаблон для документов"
+      },
+      "Drawing Objects": {
+          "Paragraph()": "Текст",
+          "Image()": "Изображение",
+          "Table()": "Таблица",
+          "Line()": "Линия",
+          "Rect()": "Прямоугольник",
+          "Circle()": "Круг"
+      },
+      "Canvas": {
+          "Canvas()": "Создает холст для рисования",
+          "canvas.drawString()": "Рисует текст",
+          "canvas.line()": "Рисует линию",
+          "canvas.rect()": "Рисует прямоугольник"
+      },
+      "Styles": {
+         "ParagraphStyle()": "Создает стиль для абзацев"
+      }
+  },
+ "WeasyPrint": {
+      "Installation": "pip install WeasyPrint",
+      "Documentation": "https://weasyprint.readthedocs.io/en/latest/",
+      "Core": {
+          "HTML()": "Загружает HTML-документ",
+          "CSS()": "Загружает CSS-стили",
+          "write_pdf()": "Создает PDF-файл"
+      },
+      "HTML": {
+          "HTML(string=html_string)": "Создает объект HTML из строки",
+          "HTML(filename=path_to_html_file)": "Создает объект HTML из файла"
+      },
+      "CSS": {
+          "CSS(string=css_string)": "Создает объект CSS из строки",
+          "CSS(filename=path_to_css_file)": "Создает объект CSS из файла"
+      },
+      "Output": {
+          "pdf = html.write_pdf(stylesheets=[css])": "Записывает HTML в PDF-файл, применяя стили CSS"
+      },
+       "Media Types":{
+          "html.write_pdf(stylesheets=[css], media_type='print')": "Указывает медиа-тип для стилей (например, 'print' для печати)"
+       }
+  },
+ "NLTK": {
+      "Installation": "pip install nltk",
+      "Documentation": "https://www.nltk.org/documentation.html",
+      "Core": {
+          "word_tokenize()": "Токенизация (разделение текста на слова)",
+          "sent_tokenize()": "Разделение текста на предложения",
+          "pos_tag()": "Разметка частей речи",
+          "FreqDist()": "Подсчет частоты слов",
+          "stopwords.words()": "Список стоп-слов для разных языков",
+          "PorterStemmer()": "Стемминг слов (приведение к основе)"
+      },
+      "Corpus": {
+          "corpus.words()": "Доступ к текстам из корпусов (например, gutenberg)",
+          "corpus.sents()": "Доступ к предложениям из корпусов",
+          "corpus.fileids()": "Список идентификаторов файлов в корпусе"
+      },
+      "Models": {
+          "download()": "Загрузка необходимых данных (корпусов, моделей)",
+          "nltk.data.path": "Путь, по которому nltk ищет ресурсы"
+      },
+      "NaiveBayesClassifier": {
+        "NaiveBayesClassifier.train()": "Обучение наивного байесовского классификатора",
+        "classifier.classify()": "Классификация текста"
+      }
+  },
+"SpaCy": {
+      "Installation": "pip install spacy",
+      "Documentation": "https://spacy.io/api/",
+      "Core": {
+          "spacy.load()": "Загрузка языковой модели",
+          "nlp()": "Обработка текста",
+          "Doc": "Класс для обработки текста",
+          "Token": "Класс для отдельных слов (токенов)",
+          "Span": "Класс для фрагментов текста"
+      },
+      "Language Models": {
+          "spacy.load('en_core_web_sm')": "Загрузка английской модели (small)",
+          "spacy.load('en_core_web_md')": "Загрузка английской модели (medium)",
+          "spacy.load('en_core_web_lg')": "Загрузка английской модели (large)",
+          "spacy.cli.download()": "Загрузка моделей (через командную строку)"
+      },
+      "Processing Text": {
+          "doc.text": "Текст документа",
+          "token.text": "Текст токена",
+          "token.lemma_": "Лемма (базовая форма) токена",
+          "token.pos_": "Часть речи токена",
+          "token.dep_": "Зависимость токена",
+          "token.head": "Глава токена (слово, к которому относится зависимость)",
+          "doc.ents": "Именованные сущности в документе"
+      },
+      "Entity Recognition": {
+          "ent.text": "Текст сущности",
+          "ent.label_": "Тип сущности (например, 'PERSON', 'ORG')"
+      },
+      "Dependency Parsing": {
+          "token.dep_": "Тип зависимости",
+          "token.head": "Глава токена"
+      },
+       "Visualization": {
+          "spacy.displacy.render()": "Визуализация зависимостей или именованных сущностей"
+      }
+  },
+ "Gensim": {
+      "Installation": "pip install gensim",
+      "Documentation": "https://radimrehurek.com/gensim/",
+      "Core": {
+          "corpora.Dictionary()": "Создание словаря (отображение слов в id)",
+          "models.TfidfModel()": "Модель TF-IDF",
+          "models.LdaModel()": "Модель LDA (Latent Dirichlet Allocation) для тематического моделирования",
+          "models.Word2Vec()": "Модель Word2Vec для представления слов в виде векторов"
+      },
+      "Text Processing": {
+          "gensim.utils.simple_preprocess()": "Простая предобработка текста",
+          "gensim.parsing.preprocessing.remove_stopwords()": "Удаление стоп-слов"
+      },
+      "Document Representation": {
+          "dictionary.doc2bow()": "Преобразование текста в формат bag-of-words (BoW)",
+          "tfidf_model[corpus]": "Применение TF-IDF к корпусу",
+          "word2vec_model.wv[word]": "Получение вектора слова"
+      },
+      "Topic Modeling (LDA)": {
+          "lda_model[corpus]": "Применение LDA к корпусу",
+          "lda_model.print_topics()": "Вывод тем"
+      },
+      "Word Embeddings (Word2Vec)": {
+          "model.wv.most_similar()": "Поиск наиболее похожих слов",
+          "model.wv.similarity()": "Вычисление сходства между словами"
+      }
+  },
+"Statsmodels": {
+      "Installation": "pip install statsmodels",
+      "Documentation": "https://www.statsmodels.org/stable/index.html",
+      "Core": {
+          "api.formula": "Для создания моделей, используя формулы",
+          "OLS()": "Ordinary Least Squares (OLS) для линейной регрессии",
+          "Logit()": "Логистическая регрессия",
+          "tsa": "Модуль для анализа временных рядов"
+      },
+      "Models": {
+          "OLS()": "Ordinary Least Squares",
+          "GLM()": "Generalized Linear Models",
+          "Logit()": "Logit model",
+          "Probit()": "Probit model",
+          "ARIMA()": "Autoregressive Integrated Moving Average (для временных рядов)"
+      },
+      "Estimation": {
+          "model.fit()": "Обучение модели",
+          "results.summary()": "Сводка результатов модели",
+          "results.params": "Параметры модели",
+          "results.pvalues": "P-значения параметров",
+          "results.conf_int()": "Доверительные интервалы"
+      },
+      "Time Series Analysis (tsa)": {
+          "arma_order_select_ic()": "Выбор порядка модели ARMA по информационным критериям",
+          "seasonal_decompose()": "Декомпозиция временного ряда",
+          "pacf()": "Partial Autocorrelation Function",
+          "acf()": "Autocorrelation Function"
+      },
+      "Datasets": {
+          "datasets.load_sample_data()": "Загрузка sample данных"
+      }
+  },
+ "Bokeh": {
+      "Installation": "pip install bokeh",
+      "Documentation": "https://docs.bokeh.org/en/latest/",
+      "Core": {
+          "figure()": "Создает график",
+          "show()": "Отображает график",
+          "output_file()": "Создает HTML-файл для отображения"
+      },
+      "Plotting Glyphs": {
+          "figure.line()": "Рисует линию",
+          "figure.scatter()": "Рисует точки",
+          "figure.circle()": "Рисует круги",
+          "figure.rect()": "Рисует прямоугольники",
+          "figure.quad()": "Рисует четырехугольники",
+          "figure.bar()": "Рисует столбцы",
+          "figure.patches()": "Рисует патчи"
+      },
+      "Customization": {
+          "figure.xaxis.axis_label": "Метка оси X",
+          "figure.yaxis.axis_label": "Метка оси Y",
+          "figure.title.text": "Заголовок графика",
+          "legend.location": "Расположение легенды",
+          "tooltips": "Всплывающие подсказки"
+      },
+      "Layout": {
+          "row()": "Размещение графиков в ряд",
+          "column()": "Размещение графиков в столбец",
+          "gridplot()": "Создание сетки графиков"
+      },
+      "Interactive Plots": {
+          "HoverTool": "Инструмент для отображения информации при наведении",
+          "TapTool": "Инструмент для взаимодействия с элементами графика",
+          "WheelZoomTool": "Инструмент для масштабирования колесом мыши"
+      }
+  },
+ "Plotly": {
+      "Installation": "pip install plotly",
+      "Documentation": "https://plotly.com/python/",
+      "Core": {
+          "graph_objects": "Для создания графиков",
+          "plotly.offline.iplot()": "Отображение графика в браузере (offline)",
+          "plotly.express": "Высокоуровневый интерфейс для создания графиков"
+      },
+      "Graph Objects": {
+          "go.Figure()": "Создает фигуру",
+          "go.Scatter()": "Создает точечный график, линейный график",
+          "go.Bar()": "Создает столбчатую диаграмму",
+          "go.Histogram()": "Создает гистограмму",
+          "go.Heatmap()": "Создает тепловую карту",
+          "go.Pie()": "Создает круговую диаграмму",
+          "go.Layout()": "Настройка макета графика"
+      },
+      "Plotly Express": {
+          "px.scatter()": "Создает точечный график",
+          "px.line()": "Создает линейный график",
+          "px.bar()": "Создает столбчатую диаграмму",
+          "px.histogram()": "Создает гистограмму",
+          "px.imshow()": "Отображает изображение",
+           "px.pie()": "Создает круговую диаграмму",
+          "px.treemap()": "Создает древовидную карту"
+      },
+      "Layout Customization": {
+          "layout.title": "Заголовок графика",
+          "layout.xaxis.title": "Метка оси X",
+          "layout.yaxis.title": "Метка оси Y",
+          "layout.showlegend": "Отображение легенды",
+          "layout.template": "Шаблон графика"
+      },
+       "Interactive Features": {
+          "hoverinfo": "Информация при наведении",
+          "clickmode": "Режим клика"
+      }
+  },
+"Dash": {
+      "Installation": "pip install dash",
+      "Documentation": "https://dash.plotly.com/",
+      "Core": {
+          "dash.Dash()": "Создает Dash-приложение",
+          "html": "Компоненты HTML",
+          "dcc": "Компоненты Dash Core (графики, элементы ввода)",
+          "callback()": "Декоратор для обратных вызовов"
+      },
+      "Layout": {
+          "html.Div()": "Раздел",
+          "html.H1()": "Заголовок",
+          "html.P()": "Параграф",
+          "html.Button()": "Кнопка",
+          "html.Input()": "Поле ввода",
+          "dcc.Graph()": "График Plotly",
+          "dcc.Dropdown()": "Выпадающий список"
+      },
+      "Callbacks": {
+          "callback(Output(...), [Input(...)])": "Определение обратного вызова",
+          "Input()": "Ввод обратного вызова",
+          "Output()": "Вывод обратного вызова",
+          "State()": "Состояние компонента"
+      },
+      "Running the app": {
+          "app.run_server(debug=True)": "Запуск сервера разработки"
+      },
+      "Style": {
+         "style": "CSS-стили для компонентов"
+      }
+  },
+"SciPy": {
+      "Installation": "pip install scipy",
+      "Documentation": "https://docs.scipy.org/doc/scipy/",
+      "Core": {
+          "optimize": "Для оптимизации функций",
+          "integrate": "Для интегрирования",
+          "stats": "Для статистического анализа",
+          "signal": "Для обработки сигналов",
+          "interpolate": "Для интерполяции"
+      },
+      "Optimization (optimize)": {
+          "minimize()": "Минимизация функции",
+          "curve_fit()": "Подгонка кривой к данным"
+      },
+      "Integration (integrate)": {
+          "quad()": "Численное интегрирование",
+          "odeint()": "Решение обыкновенных дифференциальных уравнений"
+      },
+      "Statistics (stats)": {
+          "norm": "Нормальное распределение",
+          "t": "Распределение Стьюдента",
+          "linregress()": "Линейная регрессия",
+          "ttest_ind()": "t-тест для двух независимых выборок"
+      },
+      "Signal Processing (signal)": {
+          "convolve()": "Свертка",
+          "fft()": "Быстрое преобразование Фурье"
+      },
+      "Interpolation (interpolate)": {
+          "interp1d()": "Одномерная интерполяция"
+      }
+  },
+"SymPy": {
+      "Installation": "pip install sympy",
+      "Documentation": "https://docs.sympy.org/latest/index.html",
+      "Core": {
+          "Symbol()": "Создает символьную переменную",
+          "solve()": "Решает уравнения",
+          "diff()": "Вычисляет производную",
+          "integrate()": "Вычисляет интеграл",
+          "limit()": "Вычисляет предел",
+          "series()": "Вычисляет ряд Тейлора"
+      },
+      "Symbolic Math": {
+          "symbols()": "Создает несколько символьных переменных",
+          "expand()": "Раскрытие выражений",
+          "simplify()": "Упрощение выражений",
+          "factor()": "Факторизация выражений",
+          "subs()": "Замена переменных в выражениях"
+      },
+      "Calculus": {
+          "diff()": "Дифференцирование",
+          "integrate()": "Интегрирование",
+          "limit()": "Вычисление пределов"
+      },
+      "Linear Algebra": {
+          "Matrix()": "Создание матрицы",
+          "det()": "Определитель матрицы",
+          "eigenvals()": "Собственные значения"
+      },
+      "Solving Equations": {
+          "solve()": "Решение уравнений"
+      }
+  },
+"PyYAML": {
+      "Installation": "pip install pyyaml",
+      "Documentation": "https://pyyaml.org/wiki/PyYAMLDocumentation",
+      "Core": {
+          "yaml.dump()": "Записывает Python-объекты в YAML-формат",
+          "yaml.load()": "Загружает YAML-данные в Python-объекты"
+      },
+      "Dumping Data": {
+          "yaml.dump(data, file, indent=2)": "Запись данных в YAML-формат",
+          "yaml.dump(data, file, default_flow_style=False)": "Запись данных в YAML-формат (блочный стиль)"
+      },
+      "Loading Data": {
+          "yaml.load(file, Loader=yaml.FullLoader)": "Загрузка данных из YAML-файла",
+          "yaml.safe_load()": "Безопасная загрузка YAML-данных"
+      },
+      "Representers and Resolvers": {
+        "yaml.add_representer()": "Добавление пользовательского representer",
+        "yaml.add_constructor()": "Добавление пользовательского constructor"
+      }
+  },
+"Json": {
+      "Installation": "Входит в стандартную библиотеку Python (не требует установки)",
+      "Documentation": "https://docs.python.org/3/library/json.html",
+      "Core": {
+          "json.dumps()": "Преобразует Python-объект в JSON-строку",
+          "json.loads()": "Преобразует JSON-строку в Python-объект",
+          "json.dump()": "Записывает Python-объект в JSON-файл",
+          "json.load()": "Читает JSON-объект из файла"
+      },
+      "Encoding and Decoding": {
+          "json.dumps(obj, indent=4)": "Преобразует Python-объект в JSON-строку с отступами",
+          "json.loads(json_string)": "Преобразует JSON-строку в Python-объект",
+          "json.dump(obj, file, indent=4)": "Записывает Python-объект в JSON-файл с отступами",
+          "json.load(file)": "Читает JSON-объект из файла"
+      },
+       "Custom Encoders/Decoders": {
+          "json.JSONEncoder": "Базовый класс для создания пользовательских кодировщиков",
+          "json.JSONDecoder": "Базовый класс для создания пользовательских декодировщиков"
+      }
+  },
+  "OS": {
+    "Installation": "Входит в стандартную библиотеку Python (не требует установки)",
+    "Documentation": "https://docs.python.org/3/library/os.html",
+    "Core": {
+        "getcwd()": "Возвращает текущий рабочий каталог",
+        "chdir()": "Изменяет текущий рабочий каталог",
+        "listdir()": "Возвращает список файлов и каталогов в указанном каталоге",
+        "mkdir()": "Создает каталог",
+        "makedirs()": "Создает каталоги рекурсивно",
+        "rmdir()": "Удаляет каталог (должен быть пустым)",
+        "removedirs()": "Удаляет каталоги рекурсивно (удаляет пустые родительские каталоги)",
+        "rename()": "Переименовывает файл или каталог",
+        "remove()": "Удаляет файл"
+    },
+    "Path Manipulation (os.path)": {
+        "os.path.join()": "Объединяет пути",
+        "os.path.abspath()": "Возвращает абсолютный путь",
+        "os.path.basename()": "Возвращает имя файла или каталога",
+        "os.path.dirname()": "Возвращает имя каталога",
+        "os.path.exists()": "Проверяет, существует ли путь",
+        "os.path.isfile()": "Проверяет, является ли путь файлом",
+        "os.path.isdir()": "Проверяет, является ли путь каталогом"
+    },
+    "Environment Variables": {
+        "os.environ": "Словарь переменных окружения",
+        "os.getenv(key)": "Получает значение переменной окружения"
+    },
+    "System Calls": {
+        "os.system(command)": "Выполняет системную команду",
+        "os.walk(path)": "Генерирует имена файлов в дереве каталогов"
+    },
+    "File Status": {
+        "os.stat(path)": "Возвращает информацию о файле или каталоге (размер, время изменения и т.д.)"
+    }
+},
+"Datetime": {
+    "Installation": "Входит в стандартную библиотеку Python (не требует установки)",
+    "Documentation": "https://docs.python.org/3/library/datetime.html",
+    "Core": {
+        "datetime()": "Создает объект datetime (дата и время)",
+        "date()": "Создает объект date (дата)",
+        "time()": "Создает объект time (время)",
+        "timedelta()": "Представляет разницу между двумя датами или временами"
+    },
+    "Datetime Operations": {
+        "datetime.now()": "Возвращает текущую дату и время",
+        "datetime.today()": "Возвращает текущую дату",
+        "datetime.utcnow()": "Возвращает текущую дату и время в UTC",
+        "datetime.strptime(date_string, format)": "Преобразует строку в объект datetime",
+        "datetime.strftime(format)": "Преобразует объект datetime в строку"
+    },
+    "Date Operations": {
+        "date.today()": "Возвращает текущую дату",
+        "date.fromtimestamp(timestamp)": "Создает объект date из временной метки"
+    },
+    "Time Operations": {
+      "time.strftime(format)": "Форматирует time object в строку",
+      "time.strptime(string, format)": "Преобразует строку в time object"
+    },
+    "Time Zones (timezone)": {
+        "timezone()": "Представляет информацию о часовом поясе"
+    },
+    "Timedelta Operations": {
+        "timedelta.days": "Количество дней",
+        "timedelta.seconds": "Количество секунд",
+        "timedelta.total_seconds()": "Общее количество секунд"
+    }
+},
+"Random": {
+    "Installation": "Входит в стандартную библиотеку Python (не требует установки)",
+    "Documentation": "https://docs.python.org/3/library/random.html",
+    "Core": {
+        "random()": "Возвращает случайное число с плавающей точкой в диапазоне [0.0, 1.0)",
+        "randint(a, b)": "Возвращает случайное целое число в диапазоне [a, b]",
+        "choice(sequence)": "Возвращает случайный элемент из последовательности",
+        "shuffle(sequence)": "Перемешивает элементы последовательности",
+        "seed(x)": "Устанавливает начальное значение генератора случайных чисел"
+    },
+    "Floating-Point Numbers": {
+        "random()": "Случайное число между 0 и 1",
+        "uniform(a, b)": "Случайное число между a и b",
+        "gauss(mu, sigma)": "Случайное число из гауссовского распределения"
+    },
+    "Integers": {
+      "randint(a, b)": "Целое число между a и b",
+      "randrange(start, stop, step)": "Случайный элемент из range(start, stop, step)"
+    },
+    "Sequences": {
+        "choice(seq)": "Случайный элемент из последовательности",
+        "sample(population, k)": "Выбор k элементов из последовательности без повторений",
+        "shuffle(x)": "Перемешивание последовательности"
+    }
+},
+"Logging": {
+    "Installation": "Входит в стандартную библиотеку Python (не требует установки)",
+    "Documentation": "https://docs.python.org/3/library/logging.html",
+    "Core": {
+        "getLogger(name)": "Возвращает объект Logger",
+        "basicConfig()": "Настраивает базовую конфигурацию логирования",
+        "debug(message)": "Записывает отладочное сообщение",
+        "info(message)": "Записывает информационное сообщение",
+        "warning(message)": "Записывает предупреждающее сообщение",
+        "error(message)": "Записывает сообщение об ошибке",
+        "critical(message)": "Записывает критическое сообщение"
+    },
+    "Logger Object": {
+        "logger.setLevel(level)": "Устанавливает уровень логирования",
+        "logger.addHandler(handler)": "Добавляет обработчик (Handler) для записи сообщений",
+        "logger.removeHandler(handler)": "Удаляет обработчик"
+    },
+    "Handler Object": {
+        "handler.setLevel(level)": "Устанавливает уровень логирования для обработчика",
+        "handler.setFormatter(formatter)": "Устанавливает форматтер (Formatter) для обработчика"
+    },
+    "Formatter Object": {
+      "formatter.format(record)": "Форматирует сообщение"
+    },
+    "Handlers": {
+        "StreamHandler()": "Записывает сообщения в поток (например, stderr)",
+        "FileHandler()": "Записывает сообщения в файл"
+    },
+    "Levels": {
+        "DEBUG": "Отладочные сообщения",
+        "INFO": "Информационные сообщения",
+        "WARNING": "Предупреждения",
+        "ERROR": "Ошибки",
+        "CRITICAL": "Критические ошибки"
+    }
+},
+"Re": {
+    "Installation": "Входит в стандартную библиотеку Python (не требует установки)",
+    "Documentation": "https://docs.python.org/3/library/re.html",
+    "Core": {
+        "re.search(pattern, string)": "Ищет первое соответствие шаблону в строке",
+        "re.match(pattern, string)": "Пытается сопоставить шаблон с начала строки",
+        "re.findall(pattern, string)": "Находит все неперекрывающиеся соответствия шаблону в строке",
+        "re.sub(pattern, replacement, string)": "Заменяет все соответствия шаблону в строке",
+        "re.compile(pattern)": "Компилирует регулярное выражение"
+    },
+    "Functions": {
+        "re.search()": "Ищет соответствие в любом месте строки",
+        "re.match()": "Ищет соответствие только в начале строки",
+        "re.findall()": "Находит все неперекрывающиеся соответствия и возвращает список строк",
+        "re.finditer()": "Находит все соответствия и возвращает итератор объектов Match",
+        "re.sub()": "Заменяет соответствия на указанную строку или результат функции",
+        "re.split()": "Разделяет строку на подстроки по заданному шаблону",
+        "re.escape()": "Экранирует специальные символы в строке"
+    },
+    "Match Object": {
+        "match.group(index)": "Возвращает подстроку, соответствующую группе с указанным индексом",
+        "match.groups()": "Возвращает кортеж всех подстрок, соответствующих группам",
+        "match.start()": "Возвращает начальную позицию соответствия",
+        "match.end()": "Возвращает конечную позицию соответствия",
+        "match.span()": "Возвращает кортеж (start, end) с позициями соответствия"
+    },
+    "Special Characters": {
+        ".": "Любой символ, кроме новой строки",
+        "^": "Начало строки",
+        "$": "Конец строки",
+        "*": "0 или более повторений",
+        "+": "1 или более повторений",
+        "?": "0 или 1 повторение",
+        "[]": "Набор символов",
+        "|": "Или"
+    }
+},
+"Argparse": {
+    "Installation": "Входит в стандартную библиотеку Python (не требует установки)",
+    "Documentation": "https://docs.python.org/3/library/argparse.html",
+    "Core": {
+        "ArgumentParser()": "Создает парсер аргументов командной строки",
+        "add_argument(name, options)": "Добавляет аргумент",
+        "parse_args()": "Разбирает аргументы командной строки"
+    },
+    "ArgumentParser Object": {
+        "ArgumentParser(description=description)": "Описание парсера",
+        "ArgumentParser(prog=program_name)": "Имя программы"
+    },
+    "Add Argument": {
+        "add_argument('name')": "Позиционный аргумент",
+        "add_argument('--option', action='store_true')": "Булев флаг",
+        "add_argument('--option', type=int)": "Аргумент с указанным типом",
+        "add_argument('--option', default=value)": "Аргумент со значением по умолчанию",
+        "add_argument('--option', choices=[...])": "Аргумент с допустимыми значениями",
+        "add_argument('--option', help='description')": "Описание аргумента"
+    },
+    "Arguments": {
+        "args.argument_name": "Получение значения аргумента"
+    }
+},
+"Tqdm": {
+    "Installation": "pip install tqdm",
+    "Documentation": "https://tqdm.github.io/",
+    "Core": {
+        "tqdm(iterable)": "Создает прогресс-бар для итерируемого объекта",
+        "tqdm.write(message)": "Выводит сообщение над прогресс-баром"
+    },
+    "Usage": {
+        "with tqdm(total=total) as pbar:": "Управление прогрессом вручную"
+    },
+    "Methods": {
+        "pbar.update(n)": "Обновляет прогресс на n шагов",
+        "pbar.set_description(message)": "Устанавливает описание прогресса",
+        "pbar.close()": "Закрывает прогресс-бар"
+    },
+    "Options": {
+        "tqdm(total=total)": "Общее количество итераций",
+        "tqdm(desc=description)": "Описание прогресса",
+        "tqdm(unit='unit')": "Единица измерения",
+        "tqdm(leave=False)": "Не оставляет прогресс-бар после завершения"
+    }
+},
+"Pathlib": {
+    "Installation": "Входит в стандартную библиотеку Python (не требует установки)",
+    "Documentation": "https://docs.python.org/3/library/pathlib.html",
+    "Core": {
+        "Path()": "Создает объект Path",
+        "Path.cwd()": "Возвращает текущий рабочий каталог",
+        "Path.home()": "Возвращает домашний каталог пользователя"
+    },
+    "Path Manipulation": {
+        "path / 'child'": "Объединяет пути",
+        "path.resolve()": "Возвращает абсолютный путь",
+        "path.name": "Возвращает имя файла или каталога",
+        "path.parent": "Возвращает родительский каталог",
+        "path.suffix": "Возвращает расширение файла",
+        "path.stem": "Возвращает имя файла без расширения"
+    },
+    "File Operations": {
+        "path.exists()": "Проверяет, существует ли путь",
+        "path.is_file()": "Проверяет, является ли путь файлом",
+        "path.is_dir()": "Проверяет, является ли путь каталогом",
+        "path.mkdir()": "Создает каталог",
+        "path.rmdir()": "Удаляет каталог (должен быть пустым)",
+        "path.unlink()": "Удаляет файл",
+        "path.rename()": "Переименовывает файл или каталог"
+    },
+    "Reading and Writing": {
+        "path.read_text()": "Читает содержимое файла в виде строки",
+        "path.write_text()": "Записывает строку в файл",
+        "path.read_bytes()": "Читает содержимое файла в виде байтов",
+        "path.write_bytes()": "Записывает байты в файл"
+    },
+   "Iterating Directories": {
+      "path.iterdir()": "Итератор по содержимому каталога",
+      "path.glob(pattern)": "Поиск файлов, соответствующих шаблону"
+   }
+},
+"Psutil": {
+    "Installation": "pip install psutil",
+    "Documentation": "https://psutil.readthedocs.io/en/latest/",
+    "Core": {
+        "psutil.cpu_count()": "Возвращает количество CPU",
+        "psutil.virtual_memory()": "Информация о виртуальной памяти",
+        "psutil.disk_usage()": "Информация об использовании диска",
+        "psutil.net_io_counters()": "Сетевой ввод-вывод",
+        "psutil.process_iter()": "Итератор по процессам"
+    },
+    "CPU Information": {
+        "psutil.cpu_count(logical=True)": "Логические CPU",
+        "psutil.cpu_percent()": "Загрузка CPU",
+        "psutil.cpu_times()": "Время использования CPU"
+    },
+    "Memory Information": {
+        "psutil.virtual_memory().total": "Объем ОЗУ",
+        "psutil.virtual_memory().available": "Доступная ОЗУ",
+        "psutil.swap_memory()": "Информация о swap"
+    },
+    "Disk Information": {
+        "psutil.disk_partitions()": "Разделы диска",
+        "psutil.disk_usage('/').total": "Общий объем диска",
+        "psutil.disk_usage('/').free": "Свободное пространство на диске"
+    },
+    "Network Information": {
+        "psutil.net_io_counters().bytes_sent": "Отправлено байт",
+        "psutil.net_io_counters().bytes_recv": "Получено байт",
+        "psutil.net_if_addrs()": "Информация об интерфейсах"
+    },
+    "Process Management": {
+        "psutil.Process(pid)": "Создает объект Process",
+        "process.name()": "Имя процесса",
+        "process.cpu_percent()": "Загрузка CPU процессом",
+        "process.memory_info().rss": "Использование памяти (resident set size)",
+        "process.kill()": "Завершение процесса"
+    }
+},
+"Docker": {
+    "Installation": "pip install docker",
+    "Documentation": "https://docker-py.readthedocs.io/en/stable/",
+    "Core": {
+        "docker.from_env()": "Создает клиент Docker из переменных окружения",
+        "client.containers.run()": "Запускает контейнер",
+        "client.images.pull()": "Загружает образ",
+        "client.containers.list()": "Список контейнеров"
+    },
+    "Containers": {
+        "client.containers.run(image, command)": "Запускает контейнер с образом и командой",
+        "container.start()": "Запускает остановленный контейнер",
+        "container.stop()": "Останавливает запущенный контейнер",
+        "container.remove()": "Удаляет контейнер",
+        "container.logs()": "Получает логи контейнера",
+        "container.exec_run(command)": "Выполняет команду внутри контейнера"
+    },
+    "Images": {
+        "client.images.pull(image_name)": "Загружает образ из репозитория",
+        "client.images.build(path=path, tag=tag)": "Собирает образ из Dockerfile",
+        "client.images.list()": "Список образов"
+    },
+    "Volumes": {
+        "client.volumes.create()": "Создает том",
+        "volume.remove()": "Удаляет том"
+    },
+    "Networks": {
+       "client.networks.create()": "Создает сеть",
+       "network.remove()": "Удаляет сеть"
+    }
+},
+"Paramiko": {
+    "Installation": "pip install paramiko",
+    "Documentation": "https://www.paramiko.org/",
+    "Core": {
+        "SSHClient()": "Создает SSH-клиент",
+        "client.connect(hostname, username, password)": "Устанавливает соединение",
+        "client.exec_command(command)": "Выполняет команду на удаленном сервере",
+        "client.close()": "Закрывает соединение"
+    },
+    "Authentication": {
+        "client.connect(hostname, username, password)": "Аутентификация по паролю",
+        "client.connect(hostname, username, key_filename)": "Аутентификация по ключу"
+    },
+    "Exec Command": {
+        "stdin, stdout, stderr = client.exec_command(command)": "Выполнение команды",
+        "stdout.read()": "Чтение вывода команды",
+        "stderr.read()": "Чтение ошибок"
+    },
+    "SFTP Client": {
+        "sftp = client.open_sftp()": "Создает SFTP-клиент",
+        "sftp.put(localpath, remotepath)": "Загружает файл на сервер",
+        "sftp.get(remotepath, localpath)": "Скачивает файл с сервера",
+        "sftp.close()": "Закрывает SFTP-клиент"
+    },
+    "Channel": {
+        "channel.recv()": "Прием данных по каналу",
+        "channel.send()": "Отправка данных по каналу"
+    }
+},
+"Aws-sdk (boto3)": {
+    "Installation": "pip install boto3",
+    "Documentation": "https://boto3.amazonaws.com/v1/documentation/api/latest/index.html",
+    "Core": {
+        "boto3.client(service_name)": "Создает клиент для сервиса AWS",
+        "boto3.resource(service_name)": "Создает ресурс для сервиса AWS"
+    },
+    "S3 (Storage)": {
+        "s3.upload_file(local_path, bucket_name, s3_path)": "Загружает файл в S3 bucket",
+        "s3.download_file(bucket_name, s3_path, local_path)": "Скачивает файл из S3 bucket",
+        "s3.list_objects_v2(Bucket=bucket_name)": "Список объектов в S3 bucket"
+    },
+    "EC2 (Compute)": {
+        "ec2.instances.filter(Filters=[{'Name': 'instance-state-name', 'Values': ['running']}])": "Список запущенных EC2-инстансов",
+        "instance.start()": "Запускает инстанс",
+        "instance.stop()": "Останавливает инстанс"
+    },
+    "IAM (Identity and Access Management)": {
+        "iam.create_user(UserName=user_name)": "Создает пользователя IAM",
+        "iam.delete_user(UserName=user_name)": "Удаляет пользователя IAM"
+    },
+    "DynamoDB (Database)": {
+        "dynamodb.create_table(TableName=table_name, KeySchema=[...], AttributeDefinitions=[...], ProvisionedThroughput={...})": "Создает таблицу DynamoDB",
+        "table.put_item(Item={...})": "Добавляет элемент в таблицу",
+        "table.get_item(Key={...})": "Получает элемент из таблицы"
+    }
+},
+
+"Google Cloud Platform": {
+    "Installation": "pip install google-cloud-storage google-cloud-compute",
+    "Documentation": "https://cloud.google.com/python/docs",
+    "Core": {
+        "storage.Client()": "Создает клиент для Cloud Storage",
+        "compute.Client()": "Создает клиент для Compute Engine"
+    },
+    "Cloud Storage": {
+        "client.bucket(bucket_name)": "Получает bucket",
+        "bucket.blob(blob_name)": "Получает blob (файл) в bucket",
+        "blob.upload_from_filename(filename)": "Загружает файл в bucket",
+        "blob.download_to_filename(filename)": "Скачивает файл из bucket"
+    },
+    "Compute Engine": {
+        "client.instance(zone=zone, instance=instance_name)": "Получает instance",
+        "instance.start()": "Запускает instance",
+        "instance.stop()": "Останавливает instance"
+    },
+
+    "Cloud Functions": {
+        "functions.CloudFunctionName": "По имени функции",
+        "functions.DeployCF()": "Вызывается для деплоя"
+    },
+
+     "BigQuery": {
+       "bigquery.Client()": "Подключение к BigQuery",
+       "client.query(query_string)": "Выполнение запроса"
+     },
+     "FastAPI": {
+      "Installation": "pip install fastapi uvicorn",
+      "Documentation": "https://fastapi.tiangolo.com/",
+      "Core Concepts": {
+          "FastAPI()": "Создает экземпляр FastAPI-приложения",
+          "@app.get()": "Декоратор для определения GET-маршрутов",
+          "@app.post()": "Декоратор для определения POST-маршрутов",
+          "request": "Объект запроса (доступ к данным запроса)",
+          "Response": "Класс для настройки ответа",
+          "APIRouter()": "Создает router для маршрутов"
+      },
+      "Data Validation and Serialization": {
+          "Pydantic": "Используется для валидации данных и сериализации",
+          "BaseModel": "Базовый класс для моделей Pydantic",
+          "Query()": "Валидация параметров запроса",
+          "Path()": "Валидация параметров пути"
+      },
+      "Middleware": {
+          "Middleware()": "Добавление middleware для обработки запросов",
+        "app.add_middleware()": "Регистрация middleware в приложении"
+      },
+      "Running the app": {
+          "uvicorn main:app --reload": "Запуск сервера разработки"
+      },
+        "Examples": {
+             "Example_1": "from fastapi import FastAPI"
+        }
+  }
+}
+}
